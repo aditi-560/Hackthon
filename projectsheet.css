@@ -1,0 +1,352 @@
+/* General styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(90deg, #141E30, #243B55);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #2AF598;
+}
+
+header h1 {
+    text-align: center;
+    color: #00FFF0;
+    font-size: 60px;
+    margin: 20px 0;
+    text-shadow: 0 5px 15px rgba(0, 255, 240, 0.5);
+}
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between; /* Creates space between items */
+    align-items: center; /* Aligns items vertically */
+}
+
+nav ul li {
+    margin: 0 10px; /* Space between list items */
+}
+.community-item {
+    margin-left: auto; /* Push "Join the Community" to the rightmost side */
+}
+
+.community {
+    color: aqua;
+    display: flex;
+    background-color: rgb(65, 63, 63);
+    border: 1px solid rgb(16, 15, 15);
+    border-radius: 2px;
+    padding: 5px 19px;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.community:hover {
+    transform: scale(1.1); /* Adds hover effect for better visuals */
+    background-color: rgb(35, 35, 35); /* Slightly darker hover color */
+}
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #009EFD, #2AF598);
+    border-radius: 50px;
+    padding: 8px;
+    margin: 20px auto;
+    width: 40%;
+    box-shadow: 0 5px 15px rgba(0, 158, 253, 0.5);
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.searchButton {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 117, 140, 0.7);
+}
+
+section {
+    margin: 30px 10%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    animation: fadeIn 1s ease-in-out;
+}
+
+section h2 {
+    text-align: center;
+    color: #00FFF0;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 0 5px 15px rgba(0, 255, 240, 0.3);
+}
+
+section p, section ul {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(90deg, #141E30, #243B55);
+    color: white;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.resource-content {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.resource-content ul {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.resource-content ul li {
+    margin: 10px 0;
+}
+/* Community button alignment */
+.community-item {
+    margin-left: auto;
+}
+
+.community a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Adjusting the search box */
+.searchBox {
+    width: 60%;
+    margin: 40px auto;
+}
+#resources a {
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#resources a:hover {
+    color: #2AF598; /* Change the color */
+    transform: scale(1.1); /* Slightly enlarge the link */
+    text-shadow: 0 4px 10px rgba(42, 245, 152, 0.6); /* Add a glow effect */
+}
+/* Sections */
+section {
+    margin: 40px 10%;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #00e5ff;
+    box-shadow: 0px 5px 20px rgba(0, 229, 255, 0.6);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .searchBox {
+        width: 80%;
+    }
+
+    section {
+        margin: 20px 5%;
+        padding: 20px;
+    }
+}
+/* Contact Us input fields */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    background-color: rgba(0, 158, 253, 0.1); /* Light background color */
+    border: 2px solid rgba(0, 158, 253, 0.5); /* Border color */
+    color: white; /* Text color */
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    background-color: rgba(0, 158, 253, 0.2); /* Slightly darker background on focus */
+    border: 2px solid #00e5ff; /* Bright border on focus */
+}
+
+form button {
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 117, 140, 0.5);
+}
+#ai-assistant {
+    position: fixed;
+    bottom: 20px; /* Adjust for desired placement */
+    right: 20px; /* Adjust for desired placement */
+    width: 60px;
+    height: 60px;
+    background-color: #4caf50; /* Green color */
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+#ai-assistant:hover {
+    transform: scale(1.1); /* Slightly enlarges on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* AI Assistant Icon */
+#ai-assistant img {
+    width: 70%;
+    height: 70%;
+    animation: bounce 2s infinite; /* Add a bounce animation */
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
