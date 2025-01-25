@@ -145,7 +145,7 @@ function App() {
         <p>&copy; 2023 Hackathon Support for Freshers. All rights reserved.</p>
       </footer>
       <div id="ai-assistant">
-        <img src="robo.png" alt="AI Assistant" />
+        <img src="./src/robo.png" alt="AI Assistant" />
       </div>
     </div>
   );
